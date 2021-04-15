@@ -1,5 +1,5 @@
 body {
-    background-color: #fffbf7;
+    background-color: #fffbf7; /* color de fondo de pantalla */
     margin: 0px;
 }
 h1 {
@@ -27,7 +27,7 @@ button {
     line-height: 45px;
 }
 .header{
-    margin: 40px 20px 0 20px;
+    margin: 40px 20px 0 20px; /* top,right,bottom,left */
     font-size: 0px;
 }
 .header li { /*  Todos los elementos debajo de header con nombre de li tienen las siguientes propiedades */
