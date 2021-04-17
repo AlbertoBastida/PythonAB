@@ -1,49 +1,110 @@
 <!-- Esta etiqueta nos dice que es HTML5-->
-<!DOCTYPE html><!--Nos dice desde donde comienza el codigo-->
+<!DOCTYPE html>
+<!--Nos dice desde donde comienza el codigo-->
 <html lang="en">
-<head><!--Para mostrar el titulo de la pantalla-->
+
+<head>
+    <!--Para mostrar el titulo de la pantalla-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha</title>
-    <link rel="stylesheet" href="styles.css"><!--Para tomar en cuenta la hoja de estilos-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Para tomar en cuenta la hoja de estilos-->
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
+
 <body>
-    <header class="header"><!--ponerle una clase para poder editarlo en css-->
-        <a href="#" class="logo"><!--Imagen de logo, parte superior izquierda-->
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo" />
-        </a>
-        <nav class="navbar"><!--Etiqueta de navegacion-->
-            <ul>
-                <li>Platform</li>
-                <li>Pricing</li>
-                <li>Customers</li>
-                <li>Resources</li>
-                <li>About</li>
-            </ul>
-        </nav>
-        <div class="actions"><!--Boton-->
-            <a href="#">Sign in</a>
-            <button>Start Free Trial</button>
-        </div>
-    </header>
+    <section class="fixed-header">
+        <header class="header">
+            <!--ponerle una clase para poder editarlo en css-->
+            <a href="#" class="logo">
+                <!--Imagen de logo, parte superior izquierda-->
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo" />
+            </a>
+            <nav class="navbar">
+                <!--Etiqueta de navegacion-->
+                <ul>
+                    <li>Platform</li>
+                    <li>Pricing</li>
+                    <li>Customers</li>
+                    <li>Resources</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <!--Boton-->
+                <a class="a" href="#">Sign in</a>
+                <button class="button">Start Free Trial</button>
+            </div>
+        </header>
+    </section>
 
     <main class="main">
-            <h1>Buildyour blog. Build your business.</h1><!--Para un heading, hay desde h1 hasta h6-->
-            <h4>Instaly publish articles, <strong>drive more traffic</strong> , grow your email list, and see your blog´s impact on sales.</h4>    
-            <form>
-                <input type="email"/>
-                <button type="submit">
-                    Try it now &rarr;<!--Buscar simbolo como &rarr para encontrar mas simbolos-->
-                    </button>
-            </form>
-            <p>Start publishing today with a <strong>free 7-day trial.</strong></p>
-            <p><strong>No credit card</strong>required.</p>
+        <h1>Buildyour blog. Build your business.</h1>
+        <!--Para un heading, hay desde h1 hasta h6-->
+        <h4>Instaly publish articles, <strong>drive more traffic</strong> , grow your email list, and see your blog´s
+            impact on sales.</h4>
+        <form>
+            <input type="email" />
+            <button type="submit">
+                Try it now &rarr;
+                <!--Buscar simbolo como &rarr para encontrar mas simbolos-->
+            </button>
+        </form>
+        <p>Start publishing today with a <strong>free 7-day trial.</strong></p>
+        <p><strong>No credit card</strong>required.</p>
+        <div>
+            <!-- Se hace un display bloc con este elemento -->
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="capterra">
+            <!--Para insertar imagenes-->
+        </div>
+        <div>
+            <img class="segunda-imagen" src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
+                alt="Intro Matcha">
+        </div>
+    </main>
+    <section class="promo">
+        <!-- Para hacer mas secciones, si se quisiera poner un video de la pc, solo se copia la direccion -->
+        <article class="explanatory-video">
+            <video controls
+                poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+                <!-- El poster es la imagen que aparece en el video al inicio -->
 
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="capterra"><!--Para insertar imagenes-->
-            <img class="segunda-imagen" src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png" alt="Intro Matcha">
-    </main>     
+                <!-- Aqui con el source se le meten 2 tipos de video webm y mp4, usa la necesaria para el navegador en donde abra -->
+                <!-- webm se usa para celular -->
+                <source type="video/webm"
+                    src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" />
+                <!-- mp4 se usa para pc -->
+                <source type="video/mp4"
+                    src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
+            </video>
+            <img src="images/see_how_it_works.png" alt="See how it works" />
+        </article>
+
+        <article class="publish">
+            <h3>Publish to your blog in minutes, not hours.</h3>
+
+            <p>
+                Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have
+                hours to create content that may or may not work. With Matcha, instantly publish from our library of
+                10,000+
+                professionally written articles and build your email list faster with our powerful conversion tool.
+            </p>
+
+            <div class="botonera">
+                <p>Start publishing today:</p>
+
+                <form>
+                    <input placeholder="Enter email" /><!-- placeholder permite poner texto dentro del input -->
+                    <button type="submit">
+                        Start My Trial
+                    </button>
+                </form>
+            </div>
+        </article>
+    </section>
 </body>
+
 </html>

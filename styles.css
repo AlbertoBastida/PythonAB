@@ -16,9 +16,29 @@ p {
     color: #8b8b8bcc;
 }
 button {
-    color: #ffffff; 
+    color: #fff;
     background-color: #025157;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
 }
+
+input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+}
+
+input, button {
+    height: 100%;
+    border-radius: 8px;
+}
+
+form {
+    height: 55px;
+}
+
 .header > * { /* Todos los elementos que dependan de ti, tengan display inline-block */
     display: inline-block;
     font-size: 16px;
@@ -29,10 +49,13 @@ button {
 .header{
     margin: 40px 20px 0 20px; /* top,right,bottom,left */
     font-size: 0px;
+    font-family: sans-serif;
+    height: 45px;
 }
 .header li { /*  Todos los elementos debajo de header con nombre de li tienen las siguientes propiedades */
     display: inline-block; 
-    margin: 0 20px  ;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 .logo {
     width: 20%;
@@ -46,18 +69,89 @@ button {
     color: #025157;
     font-weight: 500;
 }
+.actions > * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .actions {
     width: 20%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
+.actions a {
+    color: #67b54b;
+}
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border: 0;
+    border-radius: 5px;
+}
 .main {
-    margin: 25px 0;
+    margin: 440px 0 20px;
     text-align: center;
 }
-.main.segunda-imagen{
+.main .segunda-imagen{
     text-align: center;
     width: 70%;
     margin: 30px 0;
+}
+
+.publish {
+    flex: 1; /* Para dar proporcion */
+}
+
+.publish h3 { /* Todos los h3 dentro de publish */
+    color:#025157;
+    font-family: 'Alegreya', serif;
+    font-size: 60px;
+    line-height: 48px; /* Sirve para el interlineado */
+    font-weight: 900px;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish .botonera { /* Toda la clase publish-text que esta en la clase de publish */
+    display: flex;
+}
+.publish .botonera > p { /* Los elementos p que estan dentro de la clase botonera dentro de la clase publish */
+    color: #8b8b8bcc;
+    margin-right: 18px;
+}
+
+.promo {
+    display: flex;/* Hsce que los elementos dentro se acomoden, por defecto en horizontal */
+    width: 70%; /* Ancho del contenido dentro */
+    margin: 100px auto;
+    align-items: center;
+}
+
+.promo .explanatory-video { /* Los elementos dentro de explanatory-video los afrega una abajo del otro */
+    flex: 1; /* Para dar proporcion */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
