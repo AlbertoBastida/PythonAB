@@ -246,6 +246,9 @@ form {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
+
+
+
 /* media-query */ 
 /* Se aplican estas propiedades hasta menos de 425 */
 @media (max-width:425px) { 
@@ -256,12 +259,15 @@ form {
     .main {
         margin-top: 130px;
     }
+    .main figure .segunda-imagen {
+        display: none;
+    }
     .banner > img { /* Las imagenes que sean descendientes primarios de la clase banner */
         width: 100%;
     }
     .promo {
         flex-direction: column;
-        width: 90%;
+        width: 95%;
     }
     .explanatory-video > video {
         width: 100%;
@@ -270,7 +276,7 @@ form {
         margin-top: 10px;
     }
     .publish h3 {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1.2; /* interlineado */
     }
     .publish .botonera {
@@ -285,17 +291,79 @@ form {
         max-width: 50%;
         height: 70%;
     }
+    .publish .botonera form > button {
+        width: 35%;
+        height: 70%;
+        position: relative;
+        right: 20px;
+    }
+    .publish .botonera p {
+        color: #025157;
+        font-weight: 500;
+    }
     .features {
+        display: grid;
         grid-template: repeat(4,1fr)/1fr;
         padding-left: 0%;
-        padding-right: 0%;
+        height: 10%;
     }
-
+    .features .feature-card {
+        margin: 0 8px 10px;
+        width: 100%;
+        overflow: hidden;
+    }
     .feature-image img {
         display: none;
     }
-    .main figure .segunda-imagen {
-        display: none;
+    .card-container {
+        padding: 10px;
+        background-color: #a1d683;
+    }
+    .comments p{
+        color: black;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .comments img{
+        width: 100%;
+        margin: 30px 0 30px;
+    }
+    .comments .btn-beefy {
+        background-color: #025157;
+        color: #fff;
+        height: 50px;
+        padding-top: 20px;
+        font-weight: 600;
+      }
+    .comments .btn-beefy:hover { /* Es continuacion de arriba y significa que al darle click se cambia a color verde */
+        background-color: #67b54b;
+        color: white;
+    }
+    .col h1{
+          font-size: 45px;
+      }
+    .card-body h4{
+        color: #025157;
+        font-weight: 500;
+    }
+    .card-body .results{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-body .results img {
+        height: 25px;
+        margin-right: 10px;
+    }
+    .card-footer{
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .card-footer button{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -304,8 +372,6 @@ form {
     .promo {
         flex-direction: column;
     }
-}
-
 .card-container {
     background-color: #a1d683;
     padding: 35px;
@@ -427,6 +493,7 @@ form {
     width: 100%;
   }
 
+}
 /* sesion 3 */
 /*  .success-stories {
     background-color: #a1d683;
